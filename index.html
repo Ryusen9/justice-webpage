@@ -18,26 +18,27 @@
                 <img src="./images/logo.png" alt="">
             </div>
 
-            <div class="block md:hidden" id="openBtn"><i class="ri-menu-line text-3xl hover:text-main cursor-pointer duration-200"></i></div>
+            <div class="block md:hidden" id="openBtn"><i class="ri-menu-line text-white text-3xl hover:text-main cursor-pointer duration-200"></i></div>
 
             <div class="menu-container hidden md:block">
                 <div class="breadcrumbs text-sm">
                     <ul>
-                      <li class="lg:text-lg font-medium"><a>Home</a></li>
-                      <li class="lg:text-lg font-medium"><a>Services</a></li>
-                      <li class="lg:text-lg font-medium"><a>Cases</a></li>
-                      <li class="lg:text-lg font-medium"><a>Blogs</a></li>
-                      <li class="lg:text-lg font-medium"><a>Contact Us</a></li>
+                      <li class="lg:text-lg font-medium text-white"><a>Home</a></li>
+                      <li class="lg:text-lg font-medium text-white"><a>Services</a></li>
+                      <li class="lg:text-lg font-medium text-white"><a>Cases</a></li>
+                      <li class="lg:text-lg font-medium text-white"><a>Blogs</a></li>
+                      <li class="lg:text-lg font-medium text-white"><a>Contact Us</a></li>
                     </ul>
                   </div>
             </div>
 
-            <button class="btn btn-md bg-main font-medium text-white bg-yellow-600 hover:bg-yellow-700 hidden md:block">Free Consultation</button>
+            <button class="btn bg-main font-medium text-white bg-yellow-600 hover:bg-yellow-700 hidden md:block">Free Consultation</button>
         </nav>
 
-        <aside class="absolute hidden h-full right-0 top-0 backdrop-blur-lg pt-9 z-50 w-[70%]" id="mobileMenu">
-            <div id="closeBtn"><i class="ri-close-large-line text-2xl pl-4 pb-3 cursor-pointer hover:text-main duration-200 ease-in-out"></i></div>
+        <aside class="absolute hidden h-full right-0 top-0 backdrop-blur-lg z-50 w-[70%]" id="mobileMenu">
+
             <div class="xl:w-96 w-full xl:p-4 p-2 bg-white flex-col justify-start items-start gap-5 inline-flex border-r">
+                <div id="closeBtn"><i class="ri-close-large-line text-2xl pl-4 pb-3 cursor-pointer hover:text-main duration-200 ease-in-out"></i></div>
                 
                 <div class="w-full p-3 rounded-lg border border-gray-300">
                     <div class="w-full items-center flex">
@@ -312,6 +313,24 @@
                 </div>
         </aside>
     </header>
+
+    <main>
+        <!-- hero section -->
+        <section>
+            <div class="hero-container py-24 md:py-40 h-full w-full bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center" style="background-image: linear-gradient(180deg, rgb(17, 17, 17),rgba(17, 17, 17, 0) 100%), url(./images/banner.png);">
+                <div class="text-container flex flex-col justify-center items-center">
+                    <p class="text-white font-garamond text-center text-4xl md:text-5xl lg:text-6xl mb-5">We Provide Effective <br> Legal Solutions</p>
+                    <p class="text-gray-300 w-[80%] text-center mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                </div>
+
+                <div class="search-container py-10 px-16 flex gap-5">
+                    <input type="text" placeholder="Search your services" class="input md:input-md lg:input-lg md:w-[500px]">
+
+                    <button class="btn md:btn-md lg:btn-lg text-white bg-yellow-600 border-none hover:bg-yellow-700">Search</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <script src="./main.js"></script>
